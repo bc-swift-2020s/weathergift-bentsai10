@@ -9,9 +9,7 @@
 import UIKit
 import Foundation
 
-class API_Keys: UIViewController {
-    struct APIkeys{
+struct APIkeys{
         static let googlePlacesKey = "AIzaSyCmVJP4bm2vlY2osPC45tXZVpHD2enYLgU"
-    }
-    
 }
+    
