@@ -30,6 +30,18 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem title="About" id="7Rq-dJ-tgy"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ql5-XG-NYU"/>
+                                    <barButtonItem style="plain" id="R6q-er-Kej">
+                                        <pageControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="EoS-jP-bPR">
+                                            <rect key="frame" x="85" y="4" width="150" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="pageIndicatorTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="pageControlTapped:" destination="cZD-tl-gsQ" eventType="valueChanged" id="ik6-jp-uPW"/>
+                                            </connections>
+                                        </pageControl>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="IbI-0C-5Gh"/>
                                     <barButtonItem image="list.bullet" catalog="system" id="bio-ux-J9C">
                                         <connections>
@@ -95,6 +107,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="Tms-kz-Mlu" id="sYR-dw-set"/>
                         <outlet property="imageView" destination="oED-h0-sfg" id="0rs-Wc-bpm"/>
+                        <outlet property="pageControl" destination="EoS-jP-bPR" id="vjn-9l-4jh"/>
                         <outlet property="placeLabel" destination="3YR-Dw-qCe" id="RcW-c9-XjD"/>
                         <outlet property="summaryLabel" destination="DZg-Ad-Pkf" id="5ii-oW-nut"/>
                         <outlet property="temperatureLabel" destination="FJb-iK-j6D" id="fF5-3y-AaT"/>
