@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F0471C624240220009FB91B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0471C524240220009FB91B /* PageViewController.swift */; };
 		1F0471C82424111B009FB91B /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0471C72424111B009FB91B /* WeatherDetail.swift */; };
+		1F4A8C57243112D900AEBA9F /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A8C56243112D900AEBA9F /* DailyTableViewCell.swift */; };
 		1F6C17502415EFC5008CEF4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C174F2415EFC5008CEF4D /* AppDelegate.swift */; };
 		1F6C17522415EFC5008CEF4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C17512415EFC5008CEF4D /* SceneDelegate.swift */; };
 		1F6C17542415EFC5008CEF4D /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C17532415EFC5008CEF4D /* LocationListViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1F0471C524240220009FB91B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		1F0471C72424111B009FB91B /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
+		1F4A8C56243112D900AEBA9F /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
 		1F6C174C2415EFC5008CEF4D /* Weather Gift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Gift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6C174F2415EFC5008CEF4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F6C17512415EFC5008CEF4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				1F0471C524240220009FB91B /* PageViewController.swift */,
 				1F910A24241EC2FD007B09F3 /* LocationDetailViewController.swift */,
 				1F6C17532415EFC5008CEF4D /* LocationListViewController.swift */,
+				1F4A8C56243112D900AEBA9F /* DailyTableViewCell.swift */,
 				1F6C17552415EFC5008CEF4D /* Main.storyboard */,
 				1F6C17582415EFC7008CEF4D /* Assets.xcassets */,
 				1F6C175A2415EFC7008CEF4D /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4A8C57243112D900AEBA9F /* DailyTableViewCell.swift in Sources */,
 				1F6C17542415EFC5008CEF4D /* LocationListViewController.swift in Sources */,
 				1F0471C82424111B009FB91B /* WeatherDetail.swift in Sources */,
 				1F0471C624240220009FB91B /* PageViewController.swift in Sources */,
