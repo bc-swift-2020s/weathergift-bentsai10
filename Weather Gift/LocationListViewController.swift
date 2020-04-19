@@ -93,11 +93,22 @@ extension LocationListViewController: UITableViewDataSource, UITableViewDelegate
                tableView.deleteRows(at: [indexPath], with: .fade)
            }
        }
-       func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
            let itemToMove = weatherLocations[sourceIndexPath.row]
            weatherLocations.remove(at: sourceIndexPath.row)
            weatherLocations.insert(itemToMove, at: destinationIndexPath.row)
-       }
+    }
+    //MARK:- Tableview methods to freeze the first cell
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return indexPath.row != 0 ? true : false
+    }
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return indexPath.row != 0 ? true : false
+    }
+    
+    func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        return (proposedDestinationIndexPath.row == 0 ? sourceIndexPath : proposedDestinationIndexPath)
+    }
     
 }
 extension LocationListViewController: GMSAutocompleteViewControllerDelegate {
